@@ -1,0 +1,46 @@
+<!-- Lucas Yanetsko
+     IT 4400 Professor Vito
+     Homework 8
+     
+Part 1
+This Guest Book Application allows a user to input their first name and last name
+via a form and then it will add the entry to the database and display it using the 
+ShowGuestBook.php file.  I created set up the Datbase locally using the MySQLWorkbench 
+application-->
+
+<!-- Part 2
+What improvements would you suggest for the application? List 5, and complete 2.
+1. Add links to every page so a user is not stuck on any of the pages. (Done) 
+2. Update the table from the book code to not take up the whole page and have so much white/blank space. (Done)
+3. Add a feature to allow the user to delete their entry from the guest book. (Not Done)
+4. Add a feature to allow the user to edit their entry in the guest book. (Not Done)
+5. Make general UX/UI Improvements, Use CSS to style the pages. (Not Done) -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest Book</title>
+
+</head>
+
+<body>
+
+  <!--This section is where the user inputs their information an it is then posted-->
+  <h2>Enter your name to sign our guest book</h2>
+  <form method="POST" action="SignGuestBook.php">
+    <p>First Name <input type="text" name="first_name" /</p>
+    <p>Last Name <input type="text" name="last_name" /</p>
+    <p><input type="submit" value="Submit" /></p>
+  </form>
+</body>
+
+<!--This section is where the user can view the current guestbook-->
+<p>View the <a href="ShowGuestBook.php">current guestbook</a>.</p>
+
+</html>
